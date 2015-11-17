@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dorsal - Community Based Shark Alert App</title>
+    <meta name="description" content="Dorsal - Community Based Shark Alert App">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    
+    <style type="text/css">
+      body{
+        background-color: #16191e;
+        color: #fff;
+        font-size: 0.875em;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+      }
+      .main{
+        max-width: 800px;
+        margin: auto;
+        padding: 1em;
+        text-align: center;
+      }
+      select{
+        font-size: 1em;
+        padding: 6px 15px;
+        background-color: #009aff;
+        border: none;
+        color: #fff;
+        margin: 0 1%;
+        width: 30%;
+      }
+      ul{
+        padding: 0;
+        list-style: none;
+      }
+      ul li{
+        border-top: 1px solid #fff;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="main">
+      
+      <select id="select-state">
+        <option selected disabled style="display:none">State</option>
+        <option value="NSW">NSW</option>
+        <option value="QLD">QLD</option>
+        <option value="SA">SA</option>
+        <option value="TAS">TAS</option>
+        <option value="VIC">VIC</option>
+        <option value="WA">WA</option>
+      </select>
+      <select id="select-zone">
+        <option selected disabled style="display:none">Zone</option>
+      </select>
+      <select id="select-location">
+        <option selected disabled style="display:none">Location</option>
+      </select>
+
+      <div class="surfspot-list">
+        <ul></ul>
+      </div>
+
+    </div>
+    
+    <script type="text/javascript">
+      var apiUrl = 'http://api.dorsalapp.com/public';
+      var publicKey = 'ab61cd9427bea80f22e641c04c312195';
+      var contentType = 'application/json';
+    </script>
+
+  </body>
+</html>
+ 
